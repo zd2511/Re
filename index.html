@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#087e78">
+  <meta name="description" content="Compassionate, modern medical care. Book an appointment with our experienced healthcare team.">
+  <title>Dr. | A Great Place to Care for Yourself</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Dr. home">Dr<span>.</span></a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="nav" id="navigation">
+      <a class="active" href="#home">Home</a>
+      <a href="#about">About us</a>
+      <a href="#contact">Contact us</a>
+      <a href="#services">Services</a>
+      <a class="nav-cta" href="#appointment">Book Appointment</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <span class="eyebrow">CARE THAT PUTS YOU FIRST</span>
+        <h1>A Great Place to Care for<br class="desktop-only"> Yourself</h1>
+        <p>Medical recovery is most focused on helping you<br class="desktop-only"> discover your most beautiful smile.</p>
+        <a class="button button-light" href="#appointment">Book Appointment <span>↗</span></a>
+      </div>
+      <div class="hero-note"><span class="pulse"></span> Here for you, every step of the way</div>
+    </section>
+
+    <section class="team-overlap" id="about">
+      <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=500&q=85" alt="Doctor in a white coat">
+      <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=500&q=85" alt="Smiling male doctor">
+      <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&w=500&q=85" alt="Healthcare professional">
+      <img src="https://images.unsplash.com/photo-1584982751601-97dcc096659c?auto=format&fit=crop&w=500&q=85" alt="Female healthcare professional">
+    </section>
+
+    <section class="booking-wrap" id="appointment">
+      <form class="booking-bar" id="bookingForm">
+        <label>Choose Services
+          <select name="service" required>
+            <option value="Heart Problem">Heart Problem</option>
+            <option>General Consultation</option><option>Cardiology</option><option>Dental Care</option><option>Paediatrics</option><option>Health Check-up</option>
+          </select>
+        </label>
+        <label>Choose Date
+          <input type="date" name="date" required>
+        </label>
+        <label>Contact Number
+          <input type="tel" name="phone" placeholder="+27 68 727 9122" required>
+        </label>
+        <button class="button button-outline" type="submit">Book Appointment <span>↗</span></button>
+      </form>
+      <p class="form-message" id="formMessage" aria-live="polite"></p>
+    </section>
+
+    <section class="services-section" id="services">
+      <div class="services-photo"></div>
+      <div class="services-shade"></div>
+      <div class="services-copy">
+        <span class="eyebrow">OUR SPECIALITIES</span>
+        <h2>See what we provide to<br> keep you healthy</h2>
+        <p>With world-class preventive, prescriptive and curative medical practices, our team is committed to helping you live a healthier life.</p>
+      </div>
+      <div class="speciality-list">
+        <a href="#appointment">Cardiology <span>↗</span></a>
+        <a href="#appointment">Anaesthesiology <span>↗</span></a>
+        <a href="#appointment">Bariatric Surgery <span>↗</span></a>
+        <a href="#appointment">Blood Bank <span>↗</span></a>
+        <a href="#appointment">Endocrinology &amp; Diabetology <span>↗</span></a>
+        <a href="#appointment">Medical Oncology <span>↗</span></a>
+      </div>
+      <a class="scroll-cue" href="#stats" aria-label="Scroll to our results"><span></span></a>
+    </section>
+
+    <section class="stats" id="stats">
+      <div class="stat"><div class="stat-ring"><strong>67<span>+</span></strong></div><h3>Qualified Doctors</h3><p>Experienced specialists who put your wellbeing first.</p></div>
+      <div class="stat"><div class="stat-ring"><strong>99<span>%</span></strong></div><h3>Recovered Patients</h3><p>Thoughtful care and support at every stage.</p></div>
+      <div class="stat"><div class="stat-ring"><strong>98<span>%</span></strong></div><h3>Satisfaction Rate</h3><p>Because your health and comfort matter most.</p></div>
+    </section>
+
+    <section class="care-banner">
+      <div class="care-image"></div>
+      <div class="care-overlay"></div>
+      <div class="care-content">
+        <span class="giant-word">Dr.</span>
+        <p>Care you can feel. Expertise you can trust.</p>
+        <a class="button button-light" href="#appointment">Check out for more <span>↗</span></a>
+      </div>
+    </section>
+
+    <section class="contact-strip" id="contact">
+      <div><span class="eyebrow">LET'S TALK ABOUT YOUR HEALTH</span><h2>Your wellbeing starts here.</h2></div>
+      <a class="button button-dark" href="#appointment">Make an appointment <span>↗</span></a>
+    </section>
+  </main>
+
+  <footer><a class="brand" href="#home">Dr<span>.</span></a><p>Compassionate care. Better health. Brighter tomorrows.</p><span>© <span id="year"></span> Dr. Medical Centre</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
